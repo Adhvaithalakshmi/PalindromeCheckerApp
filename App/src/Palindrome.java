@@ -1,14 +1,24 @@
 public class Palindrome {
     static void main() {
-        String original ="madam";
-        String reversed = "";
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed = reversed + original.charAt(i);
-        }
-        if (original.equals(reversed)) {
-            System.out.println(original + "is a palindrome.");
-        } else {
-            System.out.println(original + "is not a palindrome.");
-        }
+   String str="madam";
+   char[] arr=str.toCharArray();
+   int start=0;
+   int end=arr.length-1;
+   boolean isPalindrome =true;
+   while(start<end)
+   {
+       if(arr[start] != arr[end])
+       {
+           isPalindrome =false;
+           break;
+       }
+       start++;
+       end--;
+   }
+   if(isPalindrome) {
+       System.out.println(str + "is a palindrome.");
+   } else{
+       System.out.println(str + "is not a palindrome.");
+   }
+   }
     }
-}
