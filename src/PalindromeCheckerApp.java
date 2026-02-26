@@ -20,5 +20,6 @@ public class PalindromeCheckerApp
         System.out.println("Welcome to Palindrome checker app:");
         System.out.println("version 1.0:   ");
         System.out.println("System initialised successfully:");
+        System.out.println("java");
     }
 }
