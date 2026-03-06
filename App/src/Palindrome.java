@@ -1,4 +1,3 @@
-
 class PalindromeIgnore {
 
     public static void main(String args[]) {
